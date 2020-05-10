@@ -15,7 +15,7 @@ body {
   color: #333333;
 }
 
-.container{
+.header-container{
   width: 1440px;
   margin: auto;
 }
@@ -137,4 +137,51 @@ height: 600px;
 
 .network-button_yutb{
   background-image: url(/src/images/yutb.png);
+}
+
+.oo{
+  display: flex;
+  flex-direction: column;
+}
+
+@import "~bootstrap/scss/bootstrap-grid";
+
+.general-title{
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 32px;
+}
+
+.about-salon{
+  color: #333333;
+  
+  &__text-top{
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+  }
+
+  &__text-buttom{
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+  }
+}
+
+.about-salon-img{
+  background-image: url("/src/images/about-salon__img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  border-radius: 8px;
+  padding: 20% 25%;
+}
+
+.about-salon-height{
+  height: 100%;
+}
+
+.about-salon-img__botton{
+  max-width: 100%;
+  max-height: 100%;
 }
