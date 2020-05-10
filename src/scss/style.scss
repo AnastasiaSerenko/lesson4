@@ -56,7 +56,7 @@ height: 600px;
 }
 
 .menu{
-  width: 470px;
+  // width: 470px;
 
   &__ul{
     padding: 0;
@@ -76,6 +76,11 @@ height: 600px;
   }
 
   &__item:hover{
+    color: #00BF78;
+  }
+
+  &__item_selected{
+    text-decoration: underline;
     color: #00BF78;
   }
 }
@@ -105,13 +110,20 @@ height: 600px;
 }
 
 .sign-up-button{
-  width: 200px;
   height: 50px;
   border-radius: 24px;
   border: #FB9475;
   background-color: #FB9475;
   color: white;
   font-size: 14px;
+
+  &_big{
+    width: 200px;
+  }
+
+  &_small{
+    width: 110px;
+  }
 }
 
 .main-title{
@@ -139,17 +151,17 @@ height: 600px;
   background-image: url(/src/images/yutb.png);
 }
 
-.oo{
-  display: flex;
-  flex-direction: column;
-}
-
 @import "~bootstrap/scss/bootstrap-grid";
 
 .general-title{
   font-size: 48px;
   line-height: 59px;
   margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.section{
+  padding-bottom: 100px;
 }
 
 .about-salon{
@@ -184,4 +196,74 @@ height: 600px;
 .about-salon-img__botton{
   max-width: 100%;
   max-height: 100%;
+}
+
+.popular-content{
+  padding-top: -48px;
+
+  & > div{
+     padding-top: 48px;
+  }
+}
+
+.content{
+  &_center{
+    text-align: center; 
+  }
+
+  &_left{
+    text-align: left; 
+  }
+
+  &__icon{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.text-item{
+  &__title{
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+  }
+  
+  &__content_m{
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__content_sm{
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__content_s{
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.sub-title{
+  font-size: 36px;
+  line-height: 44px;
+  margin: 0 0 35px 0;
+}
+
+.prices{
+  columns: 2;
+  margin-top: 45px;
+}
+
+.price-value{
+  color: #00BF78;
+  margin-right: 120px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.price-item{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 22px;
 }
