@@ -38,12 +38,12 @@ height: 600px;
     height: 510px;
   }
 
-  &__network{
-    display: flex;
-    flex-direction: column;
-    height: 124px;
-    justify-content: space-between;
-  }
+  // &__network{
+  //   display: flex;
+  //   flex-direction: column;
+  //   height: 124px;
+  //   justify-content: space-between;
+  // }
 }
 
 .logo{
@@ -85,7 +85,7 @@ height: 600px;
   }
 }
 
-.contacts{
+.head-contacts{
   text-align: center;
 
   &__number{
@@ -130,6 +130,24 @@ height: 600px;
   margin: 0;
   font-size: 48px;
 }
+
+.network{
+  // justify-content: space-between;
+
+  &_header{
+    display: flex;
+    flex-direction: column;
+    height: 124px;
+    justify-content: space-between;
+  }
+
+  &_contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 124px;
+  }
+  }
 
 .network-button{
   width: 28px;
@@ -321,8 +339,7 @@ height: 600px;
   right:0;
   top:0;
   text-align: center;
-  background: black;
-  opacity: 0.3;
+  opacity: 0.7;
   display:none;
   color: white;
   border-radius: 8px;
@@ -342,6 +359,9 @@ height: 600px;
 .scroll-box{
   display: flex;
   flex-direction: row;
+  text-align: center;
+  padding-top: 30px;
+  //выровнять по центру
 }
 
 .works{
@@ -396,3 +416,53 @@ height: 600px;
 .works:hover{
   transform: scale(1.1);
 }
+
+.arrow{
+display: flex;
+justify-content: flex-end;
+
+  &__item{
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+
+  &__item:hover{
+    background-color: #F8F6F7;
+  }
+}
+
+.brand-title{
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 40px;
+}
+
+.brand-item{
+  opacity: 0.5;
+}
+
+.contacts{
+  &__text{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__text_link{
+    color: #278AFF;
+  }
+
+  &__social{
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 32px;
+  }
+}
+
+
+

@@ -33,11 +33,11 @@
                       </a></li>
                     </ul>
                 </nav>
-                <div class="contacts">
-                  <p class="contacts__number">
+                <div class="head-contacts">
+                  <p class="head-contacts__number">
                     8 (499) 686-17-62
                   </p>
-                  <p class="contacts__working-hours">
+                  <p class="head-contacts__working-hours">
                     с 10.00 до 19.00 без выходных
                   </p>
                 </div>
@@ -55,7 +55,7 @@
                     </button>
                 </div>
                 <img class="header__image" src="/src/images/header__image.png" alt="header__image">
-                <div class="header__network">
+                <div class="network network_header">
                     <button class="network-button network-button_vk"></button>
                     <button class="network-button network-button_inst"></button>
                     <button class="network-button network-button_yutb"></button>
@@ -498,15 +498,20 @@
     </section>
     <section class="section">
         <div class="container">
-            <div class="row">
-                <div class="col">
+            <div class="row justify-content-between">
+                <div class="col-4">
                     <h2 class="general-title">
                         Наши работы
                     </h2>
                 </div> 
-                <div class="col">
-                    <div class="arrow-bottons">
-                        тут кнопки
+                <div class="col align-self-end">
+                    <div class="arrow">                        
+                        <button class="arrow__item arrow__item_left">
+                            <img src="/src/images/button-arrows/left.png" alt="left">
+                        </button>
+                        <button class="arrow__item arrow__item_right">
+                            <img src="/src/images/button-arrows/right.png" alt="right">
+                        </button>
                     </div>
                 </div>                
             </div>
@@ -539,6 +544,47 @@
                         <img class="works__link" src="/src/images/works/work-icon.png" alt="work-icon">
                     </a>
                 </div>              
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="brand-title">
+                    Бренды, которые мы используем в работе
+                </div>                
+            </div>            
+            <div class="row justify-content-center">
+                <div class="col-auto align-self-center"><img class = "brand-item " src="/src/images/brands/brand_1.png" alt="brand"></div>
+                <div class="col-auto align-self-center offset-md-1"><img class = "brand-item" src="/src/images/brands/brand_2.png" alt="brand"></div>
+                <div class="col-auto align-self-center offset-md-1"><img class = "brand-item" src="/src/images/brands/brand_3.png" alt="brand"></div>
+                <div class="col-auto align-self-center offset-md-1"><img class = "brand-item" src="/src/images/brands/brand_4.png" alt="brand"></div>
+                <div class="col-auto align-self-center offset-md-1"><img class = "brand-item " src="/src/images/brands/brand_5.png" alt="brand"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section section_grey">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                   <div class="contacts">
+                        <h2 class="general-title">
+                            Контакты
+                        </h2>
+                        <p class="contacts__text">Томск, проспект Ленина, дом 13</p>
+                        <p class="contacts__text">8 (499) 686-17-62</p>
+                        <a class="contacts__text_link" href="info@more-krasoty.ru">info@more-krasoty.ru</a>                        
+                        <div class="contacts__social">
+                            <p>Мы в социальных сетях</p>
+                            <div class="network network_contacts">                                
+                                <button class="network-button network-button_vk"></button>
+                                <button class="network-button network-button_inst"></button>
+                                <button class="network-button network-button_yutb"></button>
+                            </div>
+                        </div>
+                   </div> 
+                </div>
+                <div class="col"></div>
             </div>
         </div>
     </section>
