@@ -7,28 +7,26 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-container">
-            <div class="header__top">
-                <a class="logo" href="#">
-                    <h3>
-                        Мир красоты
-                    </h3>
+        <div class="container">
+            <div class="header__content">
+                <a class="logo" href="/">
+                    Мир красоты
                 </a>
                 <nav class="menu">
-                    <ul class="menu__ul">
-                      <li class="menu__item"><a>
+                    <ul class="menu__list">
+                      <li class="menu__item"><a class="menu__link" href="#services">
                           Услуги и цены
                       </a></li>
-                      <li class="menu__item"><a>
+                      <li class="menu__item"><a class="menu__link" href="#masters">
                           Мастера
                       </a></li>
-                      <li class="menu__item"><a>
+                      <li class="menu__item"><a class="menu__link" href="#works">
                           Наши работы
                       </a></li>
-                      <li class="menu__item"><a>
+                      <li class="menu__item"><a class="menu__link" href="#about">
                           О нас
                       </a></li>
-                      <li class="menu__item menu__item_position_last"><a>
+                      <li class="menu__item menu__item:last-child"><a class="menu__link" href="#contacts">
                           Контакты
                       </a></li>
                     </ul>
@@ -42,7 +40,7 @@
                   </p>
                 </div>
             </div>
-            <div class="header__bottom">
+            <div class="header__content">
                 <div class="main-info">
                     <h1 class="main-title">
                       Создай свой образ вместе с нами
@@ -56,9 +54,9 @@
                 </div>
                 <img class="header__image" src="/src/images/header__image.png" alt="header__image">
                 <div class="network network_header">
-                    <button class="network-button network-button_vk"></button>
-                    <button class="network-button network-button_inst"></button>
-                    <button class="network-button network-button_yutb"></button>
+                    <button class="social-button social-button_vk"></button>
+                    <button class="social-button social-button_inst"></button>
+                    <button class="social-button social-button_yutb"></button>
                 </div>
             </div>
         </div>
@@ -67,7 +65,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="general-title">
+                <h2 class="general-title" id="about">
                     О салоне  
                 </h2> 
             </div>             
@@ -265,24 +263,24 @@
     </section>
     <section class="section">
         <div class="container">
-           <h2 class="general-title">
+           <h2 class="general-title" id="services">
             Услуги и цены
             </h2>
             <nav class="menu">
-                <ul class="menu__ul">
-                  <li class="menu__item menu__item_selected"><a>
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link menu__link_selected" href="#">
                     Стрижка и укладка
                   </a></li>
-                  <li class="menu__item"><a>
+                  <li class="menu__item"><a class="menu__link" href="#">
                     Косметология
                   </a></li>
-                  <li class="menu__item"><a>
+                  <li class="menu__item"><a class="menu__link" href="#">
                     Маникюр и педикюр
                   </a></li>
-                  <li class="menu__item"><a>
+                  <li class="menu__item"><a class="menu__link" href="#">
                     Брови и ресницы
                   </a></li>
-                  <li class="menu__item menu__item_position_last"><a>
+                  <li class="menu__item menu__item:last-child"><a class="menu__link" href="#">
                     Массаж
                   </a></li>
                 </ul>
@@ -400,7 +398,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2 class="general-title">
+                    <h2 class="general-title" id="masters">
                         Мастера
                     </h2>
                 </div>                
@@ -500,7 +498,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-4">
-                    <h2 class="general-title">
+                    <h2 class="general-title" id="works">
                         Наши работы
                     </h2>
                 </div> 
@@ -515,35 +513,35 @@
                     </div>
                 </div>                
             </div>
-        </div>
-        <div class="scroll-box">
-            <div class="works works_work1">
-                <div class="works__over">
-                    <a href="/src/images/works/work1.png">
-                        <img class="works__link" src="/src/images/works/work-icon.png" alt="work-icon">
-                    </a>
-                </div>              
-            </div>
-            <div class="works works_work2">
-                <div class="works__over">
-                    <a href="/src/images/works/work2.png">
-                        <img class="works__link" src="/src/images/works/work-icon.png" alt="work-icon">
-                    </a>
-                </div>              
-            </div>
-            <div class="works works_work3">
-                <div class="works__over">
-                    <a href="/src/images/works/work3.png">
-                        <img class="works__link" src="/src/images/works/work-icon.png" alt="work-icon">
-                    </a>
-                </div>              
-            </div>
-            <div class="works works_work4">
-                <div class="works__over">
-                    <a href="/src/images/works/work4.png">
-                        <img class="works__link" src="/src/images/works/work-icon.png" alt="work-icon">
-                    </a>
-                </div>              
+            <div class="scroll-box">
+                <div class="works works_work1">
+                    <div class="works__over">
+                        <a href="/src/images/works/work1.png">
+                            <img class="works__link" src="/src/images/works/work-icon.png" alt="work-icon">
+                        </a>
+                    </div>              
+                </div>
+                <div class="works works_work2">
+                    <div class="works__over">
+                        <a href="/src/images/works/work2.png">
+                            <img class="works__link" src="/src/images/works/work-icon.png" alt="work-icon">
+                        </a>
+                    </div>              
+                </div>
+                <div class="works works_work3">
+                    <div class="works__over">
+                        <a href="/src/images/works/work3.png">
+                            <img class="works__link" src="/src/images/works/work-icon.png" alt="work-icon">
+                        </a>
+                    </div>              
+                </div>
+                <div class="works works_work4">
+                    <div class="works__over">
+                        <a href="/src/images/works/work4.png">
+                            <img class="works__link" src="/src/images/works/work-icon.png" alt="work-icon">
+                        </a>
+                    </div>              
+                </div>
             </div>
         </div>
     </section>
@@ -563,34 +561,91 @@
             </div>
         </div>
     </section>
-    <section class="section section_grey">
+    <section class="section section_last">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-3">
                    <div class="contacts">
-                        <h2 class="general-title">
+                        <h2 class="general-title" id="contacts">
                             Контакты
                         </h2>
                         <p class="contacts__text">Томск, проспект Ленина, дом 13</p>
                         <p class="contacts__text">8 (499) 686-17-62</p>
-                        <a class="contacts__text_link" href="info@more-krasoty.ru">info@more-krasoty.ru</a>                        
+                        <a class=" contacts__text link" href="info@more-krasoty.ru">info@more-krasoty.ru</a>                        
                         <div class="contacts__social">
                             <p>Мы в социальных сетях</p>
                             <div class="network network_contacts">                                
-                                <button class="network-button network-button_vk"></button>
-                                <button class="network-button network-button_inst"></button>
-                                <button class="network-button network-button_yutb"></button>
+                                <button class="social-button social-button_vk"></button>
+                                <button class="social-button social-button_inst"></button>
+                                <button class="social-button social-button_yutb"></button>
                             </div>
                         </div>
                    </div> 
                 </div>
-                <div class="col"></div>
+                <div class="col-5 offset-md-3">
+                    <div class="box-shadow">
+                        <div class="text-item">
+                            <h3 class="text-item__title">Быстрая запись</h3>
+                            <p class="text-item__content text-item__content_m">
+                                Наш менеджер перезвонит в течение нескольких минут, 
+                                уточнит подробности и согласует время.
+                            </p>
+                        </div>
+                        <form>                            
+                            <p>
+                              <input class="form-item" type="text" name="first_name" placeholder="Ваше имя">
+                            </p>
+                            <p>                              
+                              <input class="form-item" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                            </p>
+                            <p>
+                                <button class="sign-up-button sign-up-button_very-big">
+                                  Зарегистрироваться
+                                </button>
+                              </p>                            
+                            <p>
+                                <label>                                  
+                                  <p class="conditions-text">
+                                     Нажимая на кнопку вы соглашаетесь с 
+                                     <a class="link" href="/conditions"> обработкой персональных данных</a> 
+                                  </p>
+                                </label>
+                            </p>
+                        </form>
+                    </div>                    
+                </div>
             </div>
         </div>
     </section>
-    
-
-    bhk<br>bhk<br>
-    bhk<br>bhk<br>
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <div class="footer-style">
+                        <p>© 2020 «Море красоты»</p>
+                        <a class="link" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div class="col-auto align-self-center">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                          <li class="menu__item"><a class="menu__link" href="#services">
+                              Услуги и цены
+                          </a></li>
+                          <li class="menu__item"><a class="menu__link" href="#masters">
+                              Мастера
+                          </a></li>
+                          <li class="menu__item"><a class="menu__link" href="#works">
+                              Наши работы
+                          </a></li>
+                          <li class="menu__item menu__item:last-child"><a class="menu__link" href="#contacts">
+                              Контакты
+                          </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
