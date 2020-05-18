@@ -38,7 +38,6 @@ background-image: url(/src/images/header__background.png);
     font-size: 24px;
     line-height: 29px;
     font-weight: bold;
-    color: #333333;
 }
 
 .menu{
@@ -69,7 +68,7 @@ background-image: url(/src/images/header__background.png);
     color: #00BF78;
   }
   
-  &__link_selected{
+  &__item:active{
     text-decoration: underline;
     color: #00BF78;
   }
@@ -124,41 +123,23 @@ background-image: url(/src/images/header__background.png);
   font-size: 48px;
 }
 
-.network{
-  &_header{
+.social{
+  opacity: 0.4;
+
+  &_column{
     display: flex;
     flex-direction: column;
     height: 124px;
     justify-content: space-between;
   }
 
-  &_contacts{
+  &_row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 124px;
   }
   }
-
-.social-button{
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: none;
-  opacity: 0.4;
-
-  &_vk{
-    background-image: url(/src/images/vk.png);
-  }
-
-  &_inst{
-    background-image: url(/src/images/inst.png);
-  }
-
-  &_yutb{
-    background-image: url(/src/images/yutb.png);
-  }
-}
 
 .link{
   color: #278AFF;
@@ -187,8 +168,6 @@ background-image: url(/src/images/header__background.png);
 }
 
 .about-salon{
-  color: #333333;
-  
   &__text-top{
     font-size: 20px;
     line-height: 32px;
@@ -216,10 +195,6 @@ background-image: url(/src/images/header__background.png);
   }
 }
 
-.about-salon-height{
-  height: 100%;
-}
-
 .popular-content{
   margin-top: -48px;
 
@@ -228,20 +203,18 @@ background-image: url(/src/images/header__background.png);
   }
 }
 
-.content{
-  &_icon-style{
+.popular-img{
+  margin: 0 0 20px 0;
+}
+
+.advantages{
     height: 115%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center; 
-  }
 
-  &__img{
-    margin: 0 0 20px 0;
-  }
-
-  &__img_icon{
+  &__icon{
     margin: 0;
   }
 }
@@ -276,21 +249,22 @@ background-image: url(/src/images/header__background.png);
 }
 
 .prices{
-  columns: 2;
   margin-top: 45px;
+  columns: 2;
 }
 
-.price-value{
-  color: #00BF78;
-  margin-right: 120px;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.price-item{
+.prices-item{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding-bottom: 22px;
+
+  &__value{
+    color: #00BF78;
+    margin-right: 120px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .info-text{
@@ -416,7 +390,7 @@ background-image: url(/src/images/header__background.png);
   transform: scale(1.1);
 }
 
-.arrow{
+.scroll-arrow{
 display: flex;
 justify-content: flex-end;
 
@@ -479,6 +453,19 @@ justify-content: flex-end;
   border-width: thin;
   opacity: 0.3;
   font-size: 12px;
+}
+
+.fast-call{
+  &__title{
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+  }
+  
+  &__content{
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .footer{

@@ -53,26 +53,32 @@
                     </button>
                 </div>
                 <img src="/src/images/header__image.png" alt="header__image">
-                <div class="network network_header">
-                    <button class="social-button social-button_vk"></button>
-                    <button class="social-button social-button_inst"></button>
-                    <button class="social-button social-button_yutb"></button>
+                <div class="social social_column">
+                    <a  href="#0"> 
+                        <img src="/src/images/vk.png" alt="vk">
+                    </a>
+                    <a  href="#0"> 
+                        <img src="/src/images/inst.png" alt="vk">
+                    </a>
+                    <a  href="#0"> 
+                        <img src="/src/images/yutb.png" alt="vk">
+                    </a>                    
                 </div>
             </div>
         </div>
     </header>
-<section class="section">
+<section class="section" id="about">
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="general-title" id="about">
+                <h2 class="general-title">
                     О салоне  
                 </h2> 
             </div>             
         </div>
         <div class="row">
             <div class="col-7">
-                <div class="about-salon about-salon-height">
+                <div class="about-salon">
                    <p class="about-salon__text-top">
                     Мир красоты - это уютный салон в самом центре 
                     города. Здесь работают профессиональные визажисты, 
@@ -93,7 +99,7 @@
                 </div>  
             </div>
             <div class="col offset-md-1">
-                <div class="about-salon-img about-salon-height">
+                <div class="about-salon-img">
                     <a href="/src/images/about-salon__img.png">
                          <img class="about-salon-img__link" src="/src/images/about-salon-button.png" alt="video-about-salon">
                     </a>                   
@@ -106,8 +112,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-3">
-                    <div class="content content_icon-style">
-                        <div class="content__img content__img_icon">
+                    <div class="advantages">
+                        <div class="advantages__icon">
                             <img src="/src/images/point-about1.png" alt="icon">
                         </div>
                         <div class="text-item">
@@ -122,8 +128,8 @@
                     </div>
                 </div>
                 <div class="col-3 offset-md-1">
-                    <div class="content content_icon-style">
-                        <div class="content__img content__img_icon">
+                    <div class="advantages">
+                        <div class="advantages__icon">
                             <img src="/src/images/point-about2.png" alt="icon">
                         </div>
                         <div class="text-item">
@@ -137,8 +143,8 @@
                     </div>
                 </div>
                 <div class="col-3 offset-md-1">
-                    <div class="content content_icon-style">
-                        <div class="content__img content__img_icon">
+                    <div class="advantages">
+                        <div class="advantages__icon">
                             <img src="/src/images/point-about3.png" alt="icon">
                         </div>
                         <div class="text-item">
@@ -166,8 +172,8 @@
             </div>
             <div class="row popular-content">
                 <div class="col-4">
-                    <div class="content">
-                        <div class="content__img">
+                    <div>
+                        <div class="popular-img">
                             <img src="/src/images/popular-icon.png" alt="icon">
                         </div>
                         <div class="text-item">
@@ -184,8 +190,8 @@
                     </button>
                 </div>
                 <div class="col-4">
-                    <div class="content">
-                        <div class="content__img">
+                    <div>
+                        <div class="popular-img">
                             <img src="/src/images/popular-icon.png" alt="icon">
                         </div>
                         <div class="text-item">
@@ -203,8 +209,8 @@
                     </button>
                 </div>
                 <div class="col-4">
-                    <div class="content">
-                        <div class="content__img">
+                    <div>
+                        <div class="popular-img">
                             <img src="/src/images/popular-icon.png" alt="icon">
                         </div>
                         <div class="text-item">
@@ -222,8 +228,8 @@
                     </button>
                 </div>
                 <div class="col-4">
-                    <div class="content">
-                        <div class="content__img">
+                    <div>
+                        <div class="popular-img">
                             <img src="/src/images/popular-icon.png" alt="icon">
                         </div>
                         <div class="text-item">
@@ -240,8 +246,8 @@
                     </button>
                 </div>
                 <div class="col-4">
-                    <div class="content">
-                        <div class="content__img">
+                    <div>
+                        <div class="popular-img">
                             <img src="/src/images/popular-icon.png" alt="icon">
                         </div>
                         <div class="text-item">
@@ -261,14 +267,14 @@
             </div>
         </div>       
     </section>
-    <section class="section">
+    <section class="section" id="services">
         <div class="container">
-           <h2 class="general-title" id="services">
+           <h2 class="general-title">
             Услуги и цены
             </h2>
             <nav class="menu">
                 <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link menu__link_selected" href="#0">
+                  <li class="menu__item  menu__item:active"><a class="menu__link" href="#0">
                     Стрижка и укладка
                   </a></li>
                   <li class="menu__item"><a class="menu__link" href="#0">
@@ -286,7 +292,7 @@
                 </ul>
             </nav>
             <div class="prices">
-                <div class="price-item">
+                <div class="prices-item">
                     <div class="text-item">
                         <h4 class="text-item__title">
                             Женская стрижка
@@ -295,11 +301,11 @@
                             Короткие волосы
                         </p>
                     </div>
-                    <p class="price-value">
+                    <p class="prices-item__value">
                         1200 ₽
                     </p>
                 </div>
-                <div class="price-item">
+                <div class="prices-item">
                     <div class="text-item">
                         <h4 class="text-item__title">
                             Мужская стрижка
@@ -308,11 +314,11 @@
                             Короткие волосы
                         </p>
                     </div>
-                    <p class="price-value">
+                    <p class="prices-item__value">
                         1200 ₽
                     </p>
                 </div>
-                <div class="price-item">
+                <div class="prices-item">
                     <div class="text-item">
                         <h4 class="text-item__title">
                             Детский Стиль
@@ -321,11 +327,11 @@
                             Короткие волосы
                         </p>
                     </div>
-                    <p class="price-value">
+                    <p class="prices-item__value">
                         1200 ₽
                     </p>
                 </div>
-                <div class="price-item">
+                <div class="prices-item">
                     <div class="text-item">
                         <h4 class="text-item__title">
                             Креативный Стиль
@@ -334,11 +340,11 @@
                             Короткие волосы
                         </p>
                     </div>
-                    <p class="price-value">
+                    <p class="prices-item__value">
                         1200 ₽
                     </p>
                 </div>
-                <div class="price-item">
+                <div class="prices-item">
                     <div class="text-item">
                         <h4 class="text-item__title">
                             Стрижка бороды и усов
@@ -347,11 +353,11 @@
                             Короткие волосы
                         </p>
                     </div>
-                    <p class="price-value">
+                    <p class="prices-item__value">
                         1200 ₽
                     </p>
                 </div>
-                <div class="price-item">
+                <div class="prices-item">
                     <div class="text-item">
                         <h4 class="text-item__title">
                             Экспресс укладка
@@ -360,11 +366,11 @@
                             Короткие волосы
                         </p>
                     </div>
-                    <p class="price-value">
+                    <p class="prices-item__value">
                         1200 ₽
                     </p>
                 </div>
-                <div class="price-item">
+                <div class="prices-item">
                     <div class="text-item">
                         <h4 class="text-item__title">
                             Укладка дневная
@@ -373,11 +379,11 @@
                             Короткие волосы
                         </p>
                     </div>
-                    <p class="price-value">
+                    <p class="prices-item__value">
                         1200 ₽
                     </p>
                 </div>
-                <div class="price-item">
+                <div class="prices-item">
                     <div class="text-item">
                         <h4 class="text-item__title">
                             Прическа вечерняя (свадебная)
@@ -386,7 +392,7 @@
                             Короткие волосы
                         </p>
                     </div>
-                    <p class="price-value">
+                    <p class="prices-item__value">
                         1200 ₽
                     </p>
                 </div>
@@ -394,11 +400,11 @@
             
         </div>        
     </section>
-    <section class=" section section_grey">
+    <section class=" section section_grey"  id="masters">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2 class="general-title" id="masters">
+                    <h2 class="general-title">
                         Мастера
                     </h2>
                 </div>                
@@ -494,20 +500,20 @@
             </div>
         </div>     
     </section>
-    <section class="section">
+    <section class="section"  id="works">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-4">
-                    <h2 class="general-title" id="works">
+                    <h2 class="general-title">
                         Наши работы
                     </h2>
                 </div> 
                 <div class="col align-self-end">
-                    <div class="arrow">                        
-                        <button class="arrow__item arrow__item_left">
+                    <div class="scroll-arrow">                        
+                        <button class="scroll-arrow__item scroll-arrow__item_left">
                             <img src="/src/images/button-arrows/left.png" alt="left">
                         </button>
-                        <button class="arrow__item arrow__item_right">
+                        <button class="scroll-arrow__item scroll-arrow__item_right">
                             <img src="/src/images/button-arrows/right.png" alt="right">
                         </button>
                     </div>
@@ -561,32 +567,38 @@
             </div>
         </div>
     </section>
-    <section class="section section_last">
+    <section class="section section_last" id="contacts">
         <div class="container">
             <div class="row">
                 <div class="col-3">
                    <div class="contacts">
-                        <h2 class="general-title" id="contacts">
+                        <h2 class="general-title">
                             Контакты
                         </h2>
                         <p class="contacts__text">Томск, проспект Ленина, дом 13</p>
                         <p class="contacts__text">8 (499) 686-17-62</p>
-                        <a class=" contacts__text link" href="info@more-krasoty.ru">info@more-krasoty.ru</a>                        
+                        <a class=" contacts__text link" href="mailto:info@more-krasoty.ru">info@more-krasoty.ru</a>                        
                         <div class="contacts__social">
                             <p>Мы в социальных сетях</p>
-                            <div class="network network_contacts">                                
-                                <button class="social-button social-button_vk"></button>
-                                <button class="social-button social-button_inst"></button>
-                                <button class="social-button social-button_yutb"></button>
+                            <div class="social social_row">
+                                <a  href="#0"> 
+                                    <img src="/src/images/vk.png" alt="vk">
+                                </a>
+                                <a  href="#0"> 
+                                    <img src="/src/images/inst.png" alt="vk">
+                                </a>
+                                <a  href="#0"> 
+                                    <img src="/src/images/yutb.png" alt="vk">
+                                </a>                    
                             </div>
                         </div>
                    </div> 
                 </div>
                 <div class="col-5 offset-md-3">
                     <div class="box-shadow">
-                        <div class="text-item">
-                            <h3 class="text-item__title">Быстрая запись</h3>
-                            <p class="text-item__content text-item__content_m">
+                        <div class="fast-call">
+                            <h3 class="fast-call__title">Быстрая запись</h3>
+                            <p class="fast-call__content">
                                 Наш менеджер перезвонит в течение нескольких минут, 
                                 уточнит подробности и согласует время.
                             </p>
