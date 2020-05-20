@@ -35,9 +35,10 @@ background-image: url(/src/images/header__background.png);
 .logo{
   display: inline-block;
   text-decoration: none;
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  color: #333333;
 }
 
 .menu{
@@ -104,6 +105,7 @@ background-image: url(/src/images/header__background.png);
   background-color: #FB9475;
   color: white;
   font-size: 14px;
+  cursor: pointer;
 
   &_big{
     width: 200px;
@@ -181,18 +183,53 @@ background-image: url(/src/images/header__background.png);
   }
 }
 
-.about-salon-img{
-  background-image: url("/src/images/about-salon__img.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 0;
+.salon-video{
+  position:relative;
+  width: 50%;
   border-radius: 8px;
-  padding: 20% 25%;
+  border: none;
+
+  &__img{
+    height: 100%;
+    width: 200%;
+  }
+
+  &__over{
+    position:absolute;
+    opacity: 0.8;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    display:block;
+    width: 100%;
+  }
 
   &__link{
-  max-width: 100%;
-  max-height: 100%;
+    margin-top: 50%;
+    font-size: 16px;
+    line-height: px;
+    text-decoration: none;
+    color: white;
+  }  
+    
+  &__text{
+    margin: 1% 0;
   }
+
+  &:before{
+    content: '';
+    opacity: 0.2;
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 8px;
+    border: none;
+}
 }
 
 .popular-content{
@@ -280,53 +317,40 @@ background-image: url(/src/images/header__background.png);
   line-height: 15px;
 }
 
-.master-button{
-  position:relative;   
-  height:300px;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
+.masters{
+  position:relative;
+  width: 50%;
   border-radius: 8px;
   border: none;
 
-  &_master1{
-    background-image: url(/src/images/masters/master1.png);
-  }
-
-  &_master2{
-    background-image: url(/src/images/masters/master2.png);
-  }
-
-  &_master3{
-    background-image: url(/src/images/masters/master3.png);
-  }
-
-  &_master4{
-    background-image: url(/src/images/masters/master4.png);
+  &__img{
+    height: 100%;
+    width: 200%;
   }
 
   &__over{
-  position:absolute;
-  left:0;
-  bottom:0;
-  right:0;
-  top:0;
-  text-align: center;
-  opacity: 0.7;
-  display:none;
-  color: white;
-  border-radius: 8px;
+    position:absolute;
+    opacity: 0.8;
+    display:none;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    }
+
+    &__link{
+      margin-top: 50%;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration: none;
+      color: white;
+    }
+    
+  &:hover .masters__over{
+    display:block;
   }
-
-  &__text{
-    margin-top: 50%;
-    font-size: 14px;
-    line-height: 17px;
-}
-}
-
-.master-button:hover .master-button__over{
-  display:block;
 }
 
 .scroll-box{
