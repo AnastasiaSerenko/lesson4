@@ -436,9 +436,7 @@ background-image: url(/src/images/header__background.png);
     border: none;
   }
 }
-#delete-it{
-  width: 300px;
-}
+
 .scroll-arrow{
 display: flex;
 justify-content: flex-end;
@@ -495,6 +493,10 @@ justify-content: flex-end;
 }
 
 .form-item{
+  margin-bottom: 15px;
+}
+
+.form-input{
   border-radius: 5px;
   padding: 3%;
   width: 100%;
