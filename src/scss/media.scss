@@ -1,0 +1,95 @@
+@media only screen and (max-width: 1200px){
+}
+
+@media only screen and (max-width: 992px){
+    .header{
+        &__image{
+            opacity: 0.3;
+        }
+
+        &__bottom{
+            z-index: 1;
+        }
+    }
+
+    .menu{
+        max-width: 350px;
+        margin: 10px 0 0 3.5%; 
+        &__item{
+            padding-bottom: 7px;    
+        }        
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .header{
+        &__image{
+            display: none;
+        }
+
+        &__bottom{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .social{
+        position: static;
+        left: 50%;
+        top: 100%;
+        margin-top: 50px;
+        &.social_column{
+            flex-direction: row;
+            width: 124px;
+            height: auto;
+        }
+    }
+
+    .menu{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .hero{
+        &__title{
+            font-size: 35px;
+        }
+    }
+
+    .header{
+        padding-bottom: 80px;
+        margin-bottom: 50px;
+
+        &__top{
+            flex-direction: column;
+        }
+
+        &__bottom{
+            padding-top: 80px;
+        }
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .head-contacts{   
+        padding-top: 15px;           
+        &__number{
+          font-size: 15px;
+        }
+      
+        &__working-hours{
+          font-size: 10px;
+        }
+      }
+
+    .general-title{
+        font-size: 35px;
+        text-align: center;
+    }  
+}
+
+@media only screen and (max-width: 320px){
+}

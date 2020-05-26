@@ -18,23 +18,54 @@ body {
   min-width: 320px;
 }
 
-.container{
-  max-width: 1100px;
-}
-
-.header-container{
-  width: 100%;
-  margin: auto;
-}
-
 .header{
 background-image: url(/src/images/header__background.png);
 padding-top: 30px;
+padding-bottom: 130px;
+margin-bottom: 100px;
+overflow: hidden;
 
-  &__content{
+.container{
+  position: relative;
+}
+
+  &__top{
    display: flex;
    justify-content: space-between;
    align-items: center;
+  }
+
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 130px;
+    position: relative;
+  }
+
+  &__image{
+    position: absolute;
+    bottom: -130px;
+    right: 95px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      background-color: #FB9475;
+      width: 472px;
+      height: 472px;
+      border-radius: 50%;
+      bottom: -130px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    img{
+      display: block;
+      max-height: 510px;
+      width: auto;
+      position: relative;
+    }
   }
 }
 
@@ -99,10 +130,17 @@ padding-top: 30px;
   }
 }
 
-.main-info{
+.hero{
+  max-width: 500px;
+
   &__text{
     font-family: 'Montserrat-light';
     margin-bottom: 60px;
+  }
+
+  &__title{
+    margin: 0;
+    font-size: 48px;
   }
 }
 
@@ -128,13 +166,10 @@ padding-top: 30px;
   }
 }
 
-.main-title{
-  margin: 0;
-  font-size: 48px;
-}
-
 .social{
   opacity: 0.4;
+  position: absolute;
+  right: 0;
 
   &_column{
     display: flex;
@@ -250,6 +285,10 @@ padding-top: 30px;
 
 .popular-img{
   margin: 0 0 20px 0;
+
+  img{
+    width: 100%;
+  }
 }
 
 .advantages{
@@ -382,13 +421,16 @@ padding-top: 30px;
 .scroll-box{
   display: flex;
   flex-direction: row;
-  text-align: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 30px;
-  margin: 0 -16%;
 
   &__item{
     width: 23%;
+    max-width: 500px;
+  }
+
+  &__item:not(:last-child){
+    margin-right: 2%;
   }
 }
 
@@ -543,3 +585,6 @@ justify-content: flex-end;
   font-size: 12px;
   line-height: 15px;
 }
+
+
+@import "./media.scss";
