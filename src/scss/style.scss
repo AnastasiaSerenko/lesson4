@@ -169,22 +169,20 @@ overflow: hidden;
 .social{
   opacity: 0.4;
   position: absolute;
-  right: 0;
+  display: flex;
+  justify-content: space-between;
 
   &_column{
-    display: flex;
     flex-direction: column;
     height: 124px;
-    justify-content: space-between;
+    right: 0;
   }
 
   &_row{
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 124px;
   }
-  }
+}
 
 .link{
   color: #278AFF;
@@ -195,6 +193,10 @@ overflow: hidden;
   line-height: 59px;
   margin-bottom: 32px;
   margin-top: 0;
+
+  &_works{
+    margin-bottom: 0;
+  }
 }
 
 .section{
@@ -275,6 +277,26 @@ overflow: hidden;
   }
 }
 
+.advantages-icon{
+  text-align: center; 
+  margin: 0;
+}
+
+.advantages-text{
+  text-align: center;
+
+  &__title{
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+  
+  &__content{
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
 .popular-content{
   margin-top: -48px;
 
@@ -283,23 +305,30 @@ overflow: hidden;
   }
 }
 
-.popular-img{
-  margin: 0 0 20px 0;
+.pop-services{
+  padding-bottom: 20px;
 
-  img{
-    width: 100%;
+  &__img{
+    margin: 0 0 20px 0;
+  
+    img{
+      width: 100%;
+    }
   }
 }
 
-.advantages{
-    height: 115%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center; 
+.pop-text{
+  margin-top: 10px;
 
-  &__icon{
+  &__title{
+    font-size: 18px;
+    line-height: 22px;
     margin: 0;
+  }
+  
+  &__content{
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 
@@ -310,19 +339,9 @@ overflow: hidden;
     margin: 0;
   }
   
-  &__content_m{
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  &__content_sm{
+  &__content{
     font-size: 14px;
     line-height: 17px;
-  }
-
-  &__content_s{
-    font-size: 12px;
-    line-height: 20px;
   }
 }
 

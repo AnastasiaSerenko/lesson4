@@ -19,10 +19,17 @@
             padding-bottom: 7px;    
         }        
     }
+
+    .prices-item{
+        display: inline-block;        
+    }
 }
 
 @media only screen and (max-width: 768px){
     .header{
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+
         &__image{
             display: none;
         }
@@ -35,22 +42,103 @@
 
     .social{
         position: static;
-        left: 50%;
-        top: 100%;
-        margin-top: 50px;
-        &.social_column{
+        &_column{
+            margin-top: 50px;
             flex-direction: row;
             width: 124px;
             height: auto;
+        }
+
+        &_row{
+            padding-bottom: 15px;
         }
     }
 
     .menu{
         display: none;
     }
+
+    .general-title{
+        text-align: center;
+    }  
+
+    .about-salon{
+        &__text-top{
+          font-size: 17px;
+          line-height: 21px;
+        }
+      
+        &__text-buttom{
+          font-size: 13px;
+          margin: 0;
+        }
+      }
+      
+    #about{
+        .row{
+            flex-direction: column;
+        }
+    }
+
+    .salon-video{                       
+        &__text{
+            margin-top: 5%;
+            display:block;
+        }
+    }
+
+    .advantages-text{
+        &__content{
+            display: none;
+        }
+
+        &__title{
+            font-size: 16px;
+        }
+    }
+
+    .sub-title{
+        text-align: center;
+      }
+
+    .info-master{
+        &__name{
+          font-size: 16px;
+        }
+      
+        &__position{
+          font-size: 12px;
+        }
+      
+        &__experience{
+          font-size: 10px;
+        }
+    }
+
+    #contacts{
+        .row{
+            flex-direction: column;
+        }
+    }
+
+    .contacts{
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 480px){
+    .section{
+        margin-bottom: 50px;
+      
+        &_grey{
+          padding: 40px 0;
+        }
+      
+        &_last{
+          padding: 20px 0;
+        }
+      }
+
     .hero{
         &__title{
             font-size: 35px;
@@ -58,7 +146,7 @@
     }
 
     .header{
-        padding-bottom: 80px;
+        padding-bottom: 50px;
         margin-bottom: 50px;
 
         &__top{
@@ -86,9 +174,68 @@
       }
 
     .general-title{
-        font-size: 35px;
-        text-align: center;
+      font-size: 35px;
     }  
+
+    .advantages-text{
+        &__title{
+            font-size: 12px;
+        }
+    }
+
+    .sub-title{
+        font-size: 30px;
+    }
+
+    .pop-services{
+        padding-bottom: 20px;
+      
+        &__img{
+          margin: 0 0 5px 0;
+        }
+    }
+
+    .pop-text{
+        margin-top: 0;
+
+        &__title{
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
+        &__content{
+            display: none;
+        }
+    }
+
+    .sign-up-button{
+        height: 30px;
+        font-size: 10px;
+            
+        &_small{
+          width: 80px;
+        }
+      
+        // &_very-big{
+        //   width: 100%;
+        // }
+      }
+
+    
+    .prices-item{
+        &__value{
+            font-size: 12px;
+        }        
+    }
+
+    .text-item{
+        &__title{
+            font-size: 16px;
+        }
+
+        &__content{
+            font-size: 12px;
+        }
+    }
 }
 
 @media only screen and (max-width: 320px){
